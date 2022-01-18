@@ -222,5 +222,5 @@ def export_to_flourish():
 	to_flourish_p1000c.to_csv("timeSeries_p1000c_Boyaca.csv")
 
 	# Use terminal commands to delete 00:00:00 from the dates
-	os.system( "!sed 's/00\\:00\\:00//g' timeSeries_Boyaca.csv -i")
-	os.system( "!sed 's/00\\:00\\:00//g' timeSeries_p1000c_Boyaca.csv -i")
+	os.system( "sed 's/00\\:00\\:00//g' timeSeries_Boyaca.csv -i")
+	os.system( "sed 's/00\\:00\\:00//g' timeSeries_p1000c_Boyaca.csv -i")
